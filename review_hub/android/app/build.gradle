@@ -42,3 +42,6 @@ android {
 flutter {
     source = "../.."
 }
+dependencies {
+    implementation 'com.spotify.android:spotify-app-remote:0.7.0'  // Correct version
+}
