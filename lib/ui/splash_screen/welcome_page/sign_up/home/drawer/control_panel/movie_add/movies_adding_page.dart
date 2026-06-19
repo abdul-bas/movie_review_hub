@@ -1,6 +1,7 @@
 import 'package:first_project/depending_data/depending_colors.dart';
 import 'package:first_project/depending_data/dropdown_list.dart';
 import 'package:first_project/depending_data/snacbar.dart';
+import 'package:first_project/file_structure/ui/common/icon_button.dart';
 import 'package:first_project/function/hive_functions/movie_add_functions/movie_add.dart';
 import 'package:first_project/function/pop_up.dart';
 import 'package:first_project/main.dart';
@@ -13,7 +14,7 @@ import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/movie_add/depending_widgets/text.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/movie_add/depending_widgets/text_button_icon.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/movie_add/depending_widgets/text_field.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/home_page.dart';
+import 'package:first_project/file_structure/ui/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 

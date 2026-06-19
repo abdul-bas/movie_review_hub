@@ -1,5 +1,5 @@
 import 'package:first_project/model/sign_up_model.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/Welcome_Page.dart';
+import 'package:first_project/file_structure/ui/auth/welcome_screen/Welcome_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 

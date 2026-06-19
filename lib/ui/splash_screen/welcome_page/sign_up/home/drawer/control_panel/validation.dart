@@ -2,7 +2,7 @@ import 'package:first_project/depending_data/depending_colors.dart';
 import 'package:first_project/depending_data/navigations.dart';
 import 'package:first_project/depending_data/snacbar.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/control_home.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/sign_up/sign_up.dart';
+import 'package:first_project/file_structure/ui/auth/sign_up/sign_up.dart';
 import 'package:first_project/widget/container_widget.dart';
 import 'package:first_project/widget/text_button_widget.dart';
 import 'package:flutter/material.dart';

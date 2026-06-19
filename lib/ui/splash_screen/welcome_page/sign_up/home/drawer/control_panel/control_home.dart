@@ -1,14 +1,15 @@
 import 'package:first_project/depending_data/depending_colors.dart';
 import 'package:first_project/depending_data/navigations.dart';
+import 'package:first_project/file_structure/ui/common/icon_button.dart';
 import 'package:first_project/function/hive_functions/log_functions/get_user_db.dart';
 import 'package:first_project/function/hive_functions/movie_add_functions/get_movie.dart';
 import 'package:first_project/function/pop_up.dart';
 import 'package:first_project/main.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/Welcome_Page.dart';
+import 'package:first_project/file_structure/ui/auth/welcome_screen/Welcome_Page.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/delete/delete_movie.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/edit/movie_edit.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/movie_add/movies_adding_page.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/home_page.dart';
+import 'package:first_project/file_structure/ui/home/home_page.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/pages/movie_deteals/movie_deteals.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/search/search.dart';
 import 'package:first_project/widget/container_widget.dart';

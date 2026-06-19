@@ -1,10 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:first_project/depending_data/depending_colors.dart';
 import 'package:first_project/depending_data/navigations.dart';
+import 'package:first_project/file_structure/ui/common/icon_button.dart';
 import 'package:first_project/function/hive_functions/log_functions/get_user_db.dart';
 import 'package:first_project/function/hive_functions/movie_add_functions/get_movie.dart';
 import 'package:first_project/model/movie_model.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/home_page.dart';
+import 'package:first_project/file_structure/ui/home/home_page.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/pages/movie_deteals/movie_deteals.dart';
 import 'package:first_project/widget/container_widget.dart';
 import 'package:first_project/widget/text_widget.dart';
