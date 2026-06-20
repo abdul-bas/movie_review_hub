@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:first_project/depending_data/depending_colors.dart';
 import 'package:first_project/function/image_picker.dart';
 import 'package:first_project/function/pop_up.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/Welcome_Page.dart';
+import 'package:first_project/file_structure/ui/auth/welcome_screen/Welcome_Page.dart';
 import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/drawer/control_panel/movie_add/depending_widgets/adding_button.dart';
 import 'package:first_project/widget/container_widget.dart';
 import 'package:first_project/widget/text_widget.dart';

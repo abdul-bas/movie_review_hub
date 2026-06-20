@@ -1,7 +1,8 @@
 import 'package:first_project/depending_data/depending_colors.dart';
+import 'package:first_project/file_structure/ui/common/icon_button.dart';
 import 'package:first_project/function/pop_up.dart';
 import 'package:first_project/model/movie_model.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/home_page.dart';
+import 'package:first_project/file_structure/ui/home/home_page.dart';
 import 'package:first_project/widget/text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -32,18 +33,17 @@ class GenreDraweScreenWidget extends StatelessWidget {
   final ValueNotifier<List<MovieModel>> movieList;
 
   YoutubePlayerController _initializeController(String videoUrl) {
-    String? videoId = YoutubePlayer.convertUrlToId(videoUrl);
-    return YoutubePlayerController(
-      initialVideoId: videoId ?? '',
-      flags: const YoutubePlayerFlags(
-        autoPlay: false,
-        isLive: false,
-        startAt: 0,
-        mute: false,
-      ),
-    );
-  }
+  final videoId = YoutubePlayerController.convertUrlToId(videoUrl);
 
+  return YoutubePlayerController.fromVideoId(
+    videoId: videoId ?? '',
+    autoPlay: false,
+    params: const YoutubePlayerParams(
+      showControls: true,
+      showFullscreenButton: true,
+    ),
+  );
+}
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(

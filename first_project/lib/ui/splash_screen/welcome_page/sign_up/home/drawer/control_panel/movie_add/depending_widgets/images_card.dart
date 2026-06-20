@@ -1,6 +1,7 @@
 import 'package:first_project/depending_data/depending_colors.dart';
+import 'package:first_project/file_structure/ui/common/icon_button.dart';
 import 'package:first_project/function/image_picker.dart';
-import 'package:first_project/ui/splash_screen/welcome_page/sign_up/home/home_page.dart';
+import 'package:first_project/file_structure/ui/home/home_page.dart';
 import 'package:first_project/widget/container_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';

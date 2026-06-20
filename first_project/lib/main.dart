@@ -1,6 +1,6 @@
 import 'package:first_project/depending_data/depending_colors.dart';
 import 'package:first_project/function/hive_functions/log_functions/sign_up_hive_initialisation.dart';
-import 'package:first_project/ui/splash_screen/splash_screen.dart';
+import 'package:first_project/file_structure/ui/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 
