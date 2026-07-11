@@ -1,0 +1,1 @@
+List<String> genre= ['Comedy','Horror','Thriller','Fantecy','Action'];
