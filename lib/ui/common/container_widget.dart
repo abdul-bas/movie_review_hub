@@ -57,7 +57,7 @@ class ContainerWidget extends StatelessWidget {
         padding: EdgeInsets.symmetric(
             horizontal: paddingH != null ? screenHeight * paddingH! : 0,
             vertical: paddingV != null ? screenWidth * paddingV! : 0),
-        child: InkWell(
+        child: GestureDetector(
           onTap: () {
             if (onTap != null) {
               onTap!();

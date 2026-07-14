@@ -43,14 +43,12 @@ class _AllState extends State<All> {
           valueListenable: movieDetailes,
           builder: (context, List<MovieModel> movie, child) {
            if (movie.isEmpty) {
-          return  Expanded(
-            child: Center(
-              child: TextWidget(
-                text: 'Movies Are Not Available',
-                color: AppColors.onSurface,
-                size: 18,
-                bold: FontWeight.bold,
-              ),
+          return  Center(
+            child: TextWidget(
+              text: 'Movies Are Not Available',
+              color: AppColors.onSurface,
+              size: 13,
+              bold: FontWeight.w500,
             ),
           );
         }
@@ -62,12 +60,10 @@ class _AllState extends State<All> {
                 final smallScreen = constraints.maxWidth < 500;
 
                 return SingleChildScrollView(
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  padding: const EdgeInsets.only(bottom: AppColors.space32),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(height: AppColors.space12),
+                      const SizedBox(height: AppColors.space6),
                       HomeScreenCarouselSlider(
                         userId: userModel.id!,
                         width: width,
@@ -84,7 +80,7 @@ class _AllState extends State<All> {
                           final images = movie
                               .where((e) => e.language == language)
                               .toList();
-
+                  
                           return Padding(
                             padding: const EdgeInsets.only(
                                 bottom: AppColors.space24),

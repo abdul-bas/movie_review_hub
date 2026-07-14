@@ -21,14 +21,8 @@ class IconButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       style: ButtonStyle(
-        backgroundColor: WidgetStatePropertyAll(
-          backgroundColor ?? Colors.white.withValues(alpha:  0.07),
-        ),
-        shape: WidgetStatePropertyAll(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-        ),
+       
+      
         minimumSize: const WidgetStatePropertyAll(Size(40, 40)),
         padding: const WidgetStatePropertyAll(EdgeInsets.all(8)),
         overlayColor: WidgetStatePropertyAll(

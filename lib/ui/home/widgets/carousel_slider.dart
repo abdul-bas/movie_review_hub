@@ -47,13 +47,7 @@ class _HomeScreenCarouselSliderState extends State<HomeScreenCarouselSlider> {
                     decoration: BoxDecoration(
                       borderRadius:
                           BorderRadius.circular(AppColors.cardRadius + 4),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.4),
-                          blurRadius: 20,
-                          offset: const Offset(0, 10),
-                        ),
-                      ],
+                    
                     ),
                     child: ClipRRect(
                       borderRadius:

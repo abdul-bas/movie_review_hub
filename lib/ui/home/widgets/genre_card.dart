@@ -28,18 +28,12 @@ class GenreMovieCard extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: AppColors.surfaceElevated,
         borderRadius: BorderRadius.circular(AppColors.cardRadius),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.3),
-            blurRadius: 14,
-            offset: const Offset(0, 6),
-          ),
-        ],
+       
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,mainAxisAlignment: MainAxisAlignment.start,
         children: [
           // Poster with play overlay
           ClipRRect(
@@ -93,7 +87,7 @@ class GenreMovieCard extends StatelessWidget {
                           padding: EdgeInsets.all(14),
                           child: Icon(
                             Icons.play_arrow_rounded,
-                            color: AppColors.background,
+                            color: AppColors.bagroundWeight,
                             size: 30,
                           ),
                         ),
@@ -137,9 +131,11 @@ class GenreMovieCard extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(AppColors.space16),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(

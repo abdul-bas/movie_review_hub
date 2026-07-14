@@ -1,11 +1,13 @@
 
+import 'dart:io';
+
 import 'package:first_project/core/theme/app_colors.dart';
 import 'package:first_project/ui/movie_details/widgets/favorate_widget/favorate_widget.dart';
-import 'package:first_project/ui/movie_deteals/movie_details.dart';
+
 import 'package:first_project/ui/wishlist/controller/controller.dart';
 import 'package:first_project/model/movie_model.dart';
 import 'package:first_project/model/sign_up_model.dart';
-import 'package:first_project/routes/push_replacement_bottom.dart';
+
 import 'package:flutter/material.dart';
 
 class FavoriteMovieCard extends StatelessWidget {
@@ -45,8 +47,8 @@ class FavoriteMovieCard extends StatelessWidget {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.network(
-                    movie.movieImages[0],
+                  Image.file(
+                  File(  movie.movieImages[0]),
                     fit: BoxFit.cover,
                     errorBuilder: (_, __, ___) => Container(
                       color: AppColors.surfaceElevated,
@@ -112,7 +114,7 @@ class FavoriteMovieCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 5),
-                  Row(
+            if ((movie.rating ?? 0) > 0)  Row(
                     children: [
                       const Icon(
                         Icons.star_rounded,

@@ -1,5 +1,4 @@
 import 'package:first_project/core/theme/app_colors.dart';
-import 'package:first_project/ui/movie_details/widgets/comment_widget/comment_widget.dart';
 import 'package:first_project/ui/movie_details/widgets/movie_details/movie_details.dart';
 import 'package:first_project/core/database/auth/get_user_db.dart';
 import 'package:first_project/core/database/movie_oprations/get_movie.dart';
@@ -140,30 +139,13 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                             height: height,
                             currentIndex: currentIndex,
                             onRatingChanged: (i) =>
-                                setState(() => currentIndex = i),
+                                setState(() => currentIndex = i),commentController: commentController,
                           ),
                         );
                       },
                     ),
                   ),
-                  SliverToBoxAdapter(
-                    child: ValueListenableBuilder(
-                      valueListenable: isVisible,
-                      builder: (context, visible, child) {
-                        return Visibility(
-                          visible: !visible,
-                          maintainState: true,
-                          child: CommentWidget(
-                            controller: commentController,
-                            movieModel: model,
-                            height: height,
-                            isVisible: isVisible,
-                            usermodel: usermodel,
-                          ),
-                        );
-                      },
-                    ),
-                  ),
+                 
                 ],
               );
             },

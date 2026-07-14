@@ -1,8 +1,7 @@
 import 'package:first_project/core/theme/app_colors.dart';
 import 'package:first_project/ui/common/icon_button.dart';
 import 'package:first_project/ui/search_screen/search_screen.dart';
-import 'package:first_project/ui/common/container_widget.dart';
-import 'package:first_project/ui/common/text_widget.dart';
+
 import 'package:first_project/routes/top_push.dart';
 import 'package:flutter/material.dart';
 
@@ -12,31 +11,30 @@ PreferredSizeWidget buildHomeAppBar(BuildContext context,
     required GlobalKey<ScaffoldState> scaffoldKey}) {
   return AppBar(
     automaticallyImplyLeading: false,
-    backgroundColor:AppColors. bagroundBlack,
-    elevation: 0,
-    titleSpacing: 16,
-    title: Row(
-      children: [
-        ContainerWidget(
-          assetImage:
-              'assets/Screenshot_2024-12-28_142342-removebg-preview.png',
-          height: 0.1,
-          width: 0.09,
-          imgBaground: BoxFit.contain,
-        ),
-        const SizedBox(width: 8),
-        const TextWidget(
-          text: 'Review Hub',
-          bold: FontWeight.w800,
-        ),
-      ],
+    backgroundColor: AppColors.bagroundBlack,
+    flexibleSpace: SafeArea(
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 10, left: 5, right: 5),
+            child: SizedBox(
+                height: 50,
+                width: 50,
+                child: Image.asset(
+                    'assets/Screenshot_2024-12-28_142342-removebg-preview.png')),
+          ),
+          Text(
+            'Review Hub',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
+          ),
+        ],
+      ),
     ),
     actions: [
       IconButtonWidget(
         icon: Icons.search_rounded,
         function: () => navigateFromTop(context, SearchScreen(userId: id)),
       ),
-      const SizedBox(width: 4),
       IconButtonWidget(
         icon: Icons.menu_rounded,
         function: () {
@@ -49,12 +47,5 @@ PreferredSizeWidget buildHomeAppBar(BuildContext context,
       ),
       const SizedBox(width: 8),
     ],
-    bottom: PreferredSize(
-      preferredSize: const Size.fromHeight(1),
-      child: Container(
-        height: 1,
-        color: Colors.white.withValues(alpha: 0.06),
-      ),
-    ),
   );
 }

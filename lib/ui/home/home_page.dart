@@ -1,4 +1,3 @@
-
 import 'package:first_project/core/constants/genre_navigation.dart';
 import 'package:first_project/core/theme/app_colors.dart';
 import 'package:first_project/ui/home/widgets/app_bar.dart';
@@ -24,7 +23,7 @@ class HomePage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor:AppColors. bagroundBlack,
+      backgroundColor: AppColors.bagroundBlack,
       key: _scaffoldKey,
       endDrawer: DrawerWidget(id: id),
       appBar: buildHomeAppBar(context,
@@ -37,10 +36,13 @@ class HomePage extends StatelessWidget {
             builder: (context, value, child) => Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                  height: 3,
+                ),
                 buildHomeCategoryBar(context, value, width, height,
                     currentIndex: currentIndex),
                 const SizedBox(height: 8),
-                childNavigation(id)[currentIndex.value],
+                Expanded(child: childNavigation(id)[currentIndex.value]),
               ],
             ),
           );
